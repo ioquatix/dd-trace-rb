@@ -132,6 +132,10 @@ module Datadog
           @id == other.id
       end
 
+      def hash
+        
+      end
+
       # Return a string representation of the span.
       def to_s
         "Span(name:#{@name},sid:#{@id},tid:#{@trace_id},pid:#{@parent_id})"
